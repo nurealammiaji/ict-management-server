@@ -27,6 +27,10 @@ const register = async (req, res) => {
         const newUser = new User({
             name,
             username,
+            rank,
+            appointment,
+            email,
+            phone,
             password: hashedPassword,
             image: profileImage
         });
